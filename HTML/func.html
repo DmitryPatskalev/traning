@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<body>
+    <input type="submit" value="button1" id="button1">
+    <input type="submit" value="button2" id="button2">
+
+    <p id="elem1">text</p>
+    <p id="elem2">text</p>
+    <p id="elem3">text</p>
+    <p id="elem4">text</p>
+    <p id="elem5">text</p>
+
+    <script>
+        function func(){
+            console.log('!!!')
+        }
+        let button1 = document.getElementById('button1')
+        let button2 = document.getElementById('button2')
+        button1.addEventListener('click', func)
+        button2.addEventListener('dblclick', func)
+
+        function func2 (){
+            console.log('message')
+        }
+
+        let elem1 = document.getElementById('elem1')
+        let elem2 = document.getElementById('elem2')
+        let elem3 = document.getElementById('elem3')
+        let elem4 = document.getElementById('elem4')
+        let elem5 = document.getElementById('elem5')
+
+        elem1.addEventListener('mouseover', func2)
+        elem2.addEventListener('mouseover', func2)
+        elem3.addEventListener('mouseover', func2)
+        elem4.addEventListener('mouseover', func2)
+        elem5.addEventListener('mouseover', func2)
+    </script>
+</body>
+</head>
+
+</html>
