@@ -8,17 +8,34 @@
   </head>
   <body>
     <input type="submit" value="1" id="button" />
+    <p>
+      <p>text1</p>
+      <p>text2</p>
+      <p>text3</p>
+    </p>
 
     <script>
+
       let button = document.getElementById("button");
       button.addEventListener("click", func);
       function func() {
-        var sum = Number(this.value);
         this.value++;
         if (this.value == 10) {
           this.removeEventListener("click", func);
         }
+     }
+
+      let elems = document.querySelectorAll('p')
+      for(let elem of elems){
+        elem.addEventListener('click', function func1(){
+          this.innerHTML += '!'
+          this.removeEventListener('click', func1)
+        })
       }
+
+
+
+
     </script>
   </body>
 </html>
