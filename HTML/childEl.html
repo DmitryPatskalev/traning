@@ -33,6 +33,13 @@
         <p>4</p>
         <p>5</p>
     </div>
+
+    <div class="parents">
+        <p class="child">Child1</p>
+        <p class="child">Child2</p>
+        <p class="child">Child3</p>
+        <p class="child">Child4</p>
+    </div>
     <script>
         let parent = document.getElementById('parent')
 
@@ -62,6 +69,9 @@
             classElems.style.fontSize = '40px'
         }
 
+        let parents = document.getElementsByClassName('child')
+
+        console.log(parents)
     </script>
 </body>
 
