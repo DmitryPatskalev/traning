@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="elem">
+      <div>
+        <input type="submit" value="0" id="button1" />
+      </div>
+      <p>----------</p>
+      <div>
+        <input type="submit" value="0" id="button2" />
+      </div>
+    </div>
+
+    <script>
+      let elems = document.getElementsByClassName("elem");
+      for (let elem of elems) {
+        elem.addEventListener("click", function () {
+          button1.value++;
+          button2.value--;
+        });
+      }
+    </script>
+  </body>
+</html>
