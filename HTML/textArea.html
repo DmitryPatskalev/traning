@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input id="elem" disabled />
+      <button id="button">Button</button>
+      <button id="button2">Button2</button>
+    </div>
+    <div>
+      <input type="checkbox" checked id="cbox" />
+      <button id="button3">Button</button>
+      <button id="button4">Button2</button>
+    </div>
+    <div>
+      <input type="checkbox" name="" id="cbox2" />
+      <p id="par"></p>
+      <button id="button5">Button5</button>
+    </div>
+    <script>
+      let button = document.getElementById("button");
+      let button2 = document.getElementById("button2");
+      let elem = document.getElementById("elem");
+      button.addEventListener("click", function () {
+        elem.disabled = true;
+      });
+      button2.addEventListener("click", function () {
+        elem.disabled = false;
+      });
+
+      let button3 = document.getElementById("button3");
+      let button4 = document.getElementById("button4");
+      button3.addEventListener("click", function () {
+        cbox.checked = true;
+      });
+      button4.addEventListener("click", function () {
+        cbox.checked = false;
+      });
+
+      let button5 = document.getElementById("button5");
+      let par = document.getElementById("par");
+      let cbox2 = document.getElementById("cbox2");
+      button5.addEventListener("click", function () {
+        if (cbox2.checked == true) {
+          par.innerHTML = "Hello!";
+        }
+        if (cbox2.checked == false) {
+          par.innerHTML = "Good Buy!";
+        }
+      });
+    </script>
+  </body>
+</html>
