@@ -22,6 +22,18 @@
       <p id="par"></p>
       <button id="button5">Button5</button>
     </div>
+    <div>
+      <p>
+        <input id="elem2" disabled />
+        <button id="button6">Click</button>
+      </p>
+    </div>
+    <div>
+      <p>
+        <input type="checkbox" id="cbox3 " />
+        <button id="button7">Click</button>
+      </p>
+    </div>
     <script>
       let button = document.getElementById("button");
       let button2 = document.getElementById("button2");
@@ -52,6 +64,16 @@
         if (cbox2.checked == false) {
           par.innerHTML = "Good Buy!";
         }
+      });
+      let elem2 = document.getElementById("elem2");
+      let button6 = document.getElementById("button6");
+      button6.addEventListener("click", function () {
+        elem2.disabled = !elem2.disabled;
+      });
+      let button7 = document.getElementById("button7");
+      let cbox3 = document.getElementById("cbox3");
+      button7.addEventListener("click", function () {
+        cbox3.checked = !cbox3.checked;
       });
     </script>
   </body>
