@@ -11,20 +11,6 @@
     <input type="text" value="" id="elem" />
     <p id="p"></p>
     <input type="submit" value="BUTTON" id="button" />
-    <script>
-      let button = document.getElementById("button");
-      let elem = document.getElementById("elem");
-
-      button.addEventListener("click", function () {
-        p.innerHTML = fact(elem.value);
-      });
-      function fact(num) {
-        let sum = 1;
-        for (i = 1; i <= num; i++) {
-          sum *= i;
-        }
-        return sum;
-      }
-    </script>
+    <script src="/JS&HTML/JS/fact.js"></script>
   </body>
 </html>
