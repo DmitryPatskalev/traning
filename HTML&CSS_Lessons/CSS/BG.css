@@ -1,0 +1,12 @@
+body {
+  padding: 30px;
+  background-color: aqua;
+}
+.block {
+  background: url("/HTML&CSS_Lessons/Image/Manchester_United.png") space;
+  background-position: center;
+  background-size: 100px;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #000;
+}
