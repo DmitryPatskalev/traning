@@ -23,8 +23,46 @@ button.addEventListener("click", function () {
   let timer = setInterval(function () {
     elem3.value = Number(elem1.value) - Number(elem2.value);
     elem1.value -= i;
-    if (elem3.value == -10) {
+    if (elem3.value == 0) {
       clearInterval(timer);
     }
   }, 500);
+});
+
+let button2 = document.addEventListener("click", function () {
+  let stop = setInterval(function () {
+    text.innerHTML++;
+    if (text.innerHTML >= 10) {
+      clearInterval(stop);
+    }
+  }, 500);
+});
+
+let sqrt = document.getElementById("sqrt");
+sqrt.addEventListener("mouseout", function () {
+  setInterval(() => {
+    this.value *= 2;
+  }, 1000);
+});
+
+let text2 = document.getElementById("text2");
+text2.addEventListener("mouseout", function () {
+  let time = setInterval(() => {
+    this.value -= 1;
+    if (this.value == 0) {
+      clearInterval(time);
+    }
+  }, 500);
+});
+let par = document.getElementById("par");
+par.addEventListener("click", function () {
+  let i = 0;
+  setInterval(() => {
+    if (i % 2 == 0) {
+      par.style.color = "red";
+    } else {
+      par.style.color = "green";
+    }
+    i++;
+  }, 1000);
 });
