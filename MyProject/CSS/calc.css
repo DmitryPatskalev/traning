@@ -1,0 +1,30 @@
+.border {
+  display: block;
+  width: 600px;
+  height: 300px;
+  border: 2px solid green;
+  margin: 30px;
+  background-color: rgb(93, 233, 233);
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px 5px black;
+}
+
+.buttons button {
+  width: 100px;
+  height: 100px;
+  margin: 20px 15px 20px 30px;
+  font-size: 60px;
+  background-color: rgb(57, 212, 37);
+  box-shadow: 3px 3px 15px 5px grey;
+}
+.inputs input {
+  width: 120px;
+  height: 35px;
+  margin: 10px 10px 10px 30px;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px 5px grey;
+  background-color: wheat;
+}
