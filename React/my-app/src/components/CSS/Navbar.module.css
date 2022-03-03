@@ -1,0 +1,12 @@
+.nav {
+  grid-area: nav;
+  background-color: rgb(195, 239, 245);
+  text-align: center;
+  padding: 30px;
+}
+.item a {
+  color: white;
+}
+.item :hover {
+  color: gold;
+}
