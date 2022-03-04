@@ -1,21 +1,21 @@
-import s from "./Navbar.module.css";
+import css from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav className={s.nav}>
-      <div className={s.item}>
+    <nav className={css.nav}>
+      <div className={css.item}>
         <a>Profile</a>
       </div>
-      <div className={s.item}>
+      <div className={css.item}>
         <a>Messages</a>
       </div>
-      <div className={s.item}>
+      <div className={css.item}>
         <a>News</a>
       </div>
-      <div className={s.item}>
+      <div className={css.item}>
         <a>Music</a>
       </div>
-      <div className={s.item}>
+      <div className={css.item}>
         <a>Settings</a>
       </div>
     </nav>

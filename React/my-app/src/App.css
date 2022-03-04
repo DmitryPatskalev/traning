@@ -1,7 +1,7 @@
 .app-wrapper {
   display: grid;
   margin: 0px auto;
-  width: 1300px;
+  width: 1350px;
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 5px;
