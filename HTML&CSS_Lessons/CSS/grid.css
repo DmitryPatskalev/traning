@@ -1,58 +1,19 @@
-.content {
-  padding: 30px;
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.grid {
-  font-size: 50px;
-  margin: 0px 0px 30px 0px;
-  position: relative;
-}
-
-.grid_body {
+.wrapper {
   display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 10px;
 }
 
-.grid_item1:hover {
-  margin: 10px;
-  text-align: center;
-  padding: 30px;
-  border: 3px solid grey;
-  background-color: aquamarine;
+.wrapper div {
+  padding: 1em;
+  background-color: rgb(240, 70, 70);
 }
-
-.grid_item2:hover {
-  margin: 30px;
-  text-align: center;
-  padding: 30px;
-  border: 3px solid grey;
-  background-color: yellowgreen;
-}
-.grid_item3:hover {
-  margin: 30px;
-  text-align: center;
-  padding: 30px;
-  border: 3px solid grey;
-  background-color: red;
-}
-.grid_item4:hover {
-  margin: 10px;
-  text-align: center;
-  padding: 30px;
-  border: 3px solid grey;
-  background-color: greenyellow;
-}
-.grid_item5:hover {
-  margin: 10px;
-  text-align: center;
-  padding: 30px;
-  border: 3px solid grey;
-  background-color: blue;
-}
-.grid_item6:hover {
-  margin: 10px;
-  text-align: center;
-  padding: 30px;
-  border: 3px solid grey;
-  background-color: orange;
+.wrapper div.light {
+  padding: 1em;
+  background-color: rgb(22, 243, 169);
 }
