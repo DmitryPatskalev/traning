@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-gap: 10px;
+}
+
+.wrapper div {
+  background-color: rgb(164, 153, 190);
+  justify-self: center;
+  height: 200px;
+}
