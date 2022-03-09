@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+}
+.block1 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 250px);
+}
+.block1 .odd {
+  opacity: 0;
+  height: 250px;
+}
+.block1 div {
+  background-color: red;
+  height: 250px;
+  border-radius: 50%;
+}
+.block1 :hover {
+  background-color: blue;
+}
+
+.block2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 250px);
+}
+
+.block2 .even {
+  opacity: 0;
+  height: 250px;
+}
+.block2 div {
+  background-color: red;
+  height: 250px;
+  border-radius: 50%;
+}
+.block2 div {
+  background-color: red;
+  height: 250px;
+  border-radius: 50%;
+}
+.block2 :hover {
+  background-color: yellow;
+}
+.block3 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, 250px);
+}
+
+.block3 .odd {
+  opacity: 0;
+  height: 250px;
+}
+.block3 div {
+  background-color: red;
+  height: 250px;
+  border-radius: 50%;
+}
+.block3 :hover {
+  background-color: green;
+}
