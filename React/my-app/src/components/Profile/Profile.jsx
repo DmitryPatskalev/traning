@@ -1,12 +1,10 @@
 import MyPosts from "./MyPosts/MyPosts";
-import css from "./Profile.module.css";
-import stadium from "./../Photo/stadium.jpg";
+import ProfileInfo from "./MyPosts/ProfileInfo/ProfileInfo";
 
 const Profile = () => {
   return (
-    <div className={css.stadium}>
-      <img src={stadium} />
-      <div>ava + description</div>
+    <div>
+      <ProfileInfo />
       <MyPosts />
     </div>
   );
