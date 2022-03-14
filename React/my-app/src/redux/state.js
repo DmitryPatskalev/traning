@@ -1,3 +1,4 @@
+import { renderIntiveTree } from "./../render";
 let state = {
   profilePage: {
     posts: [
@@ -26,4 +27,15 @@ let state = {
     { id: 3, name: "Danik" },
   ],
 };
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    id: 3,
+    message: postMessage,
+    like: 10,
+  };
+  state.profilePage.posts.push(newPost);
+  renderIntiveTree(state);
+};
+
 export default state;
