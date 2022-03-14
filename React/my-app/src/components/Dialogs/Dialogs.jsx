@@ -10,7 +10,7 @@ const Dialogs = (props) => {
   let messagesElements = props.state.messages.map((messages) => (
     <Message message={messages.message} />
   ));
-  let postAdd = () => {
+  let addPost = () => {
     let text = newPostElement.current.value;
     alert(text);
     newPostElement.current.value = "";
@@ -29,7 +29,7 @@ const Dialogs = (props) => {
           ></textarea>
         </div>
         <div>
-          <button onClick={postAdd}>Click me</button>
+          <button onClick={addPost}>Click me</button>
         </div>
       </div>
     </div>
