@@ -1,4 +1,7 @@
-import { renderIntiveTree } from "./../render";
+let renderIntiveTree = () => {
+  console.log("State changed");
+};
+
 let state = {
   profilePage: {
     posts: [
@@ -29,7 +32,7 @@ let state = {
   ],
 };
 
-export let addPost = () => {
+export const addPost = () => {
   let newPost = {
     id: 3,
     message: state.profilePage.newPostText,
@@ -40,9 +43,13 @@ export let addPost = () => {
   state.profilePage.newPostText = "";
 };
 
-export let updateNewPostText = (newText) => {
+export const updateNewPostText = (newText) => {
   state.profilePage.newPostText = newText;
   renderIntiveTree(state);
+};
+
+export const subscribe = (obserber) => {
+  renderIntiveTree = obserber;
 };
 
 export default state;
