@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import state, { addPost, updateNewPostText, subscribe } from "./redux/state";
+import store from "./redux/state";
 
 let renderIntiveTree = (state) => {
   ReactDOM.render(
@@ -13,19 +13,17 @@ let renderIntiveTree = (state) => {
       <BrowserRouter>
         <App
           state={state}
-          addPost={addPost}
-          updateNewPostText={updateNewPostText}
+          addPost={store.addPost.bind(store)}
+          updateNewPostText={store.updateNewPostText.bind(store)}
         />
       </BrowserRouter>
     </React.StrictMode>,
     document.getElementById("root")
   );
 };
-
-subscribe(renderIntiveTree);
-renderIntiveTree(state);
-
+renderIntiveTree(store.getState());
+store.subscribe(renderIntiveTree);
+reportWebVitals();
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
