@@ -28,29 +28,31 @@ let store = {
       { id: 3, name: "Danik" },
     ],
   },
-  getState() {
-    return this._state;
-  },
   _callSubscriber() {
     console.log("State changed");
   },
-  addPost() {
-    let newPost = {
-      id: 3,
-      message: this._state.profilePage.newPostText,
-      like: 10,
-    };
-    this._state.profilePage.posts.push(newPost);
-    this._state.profilePage.newPostText = "";
-    this._callSubscriber(this._state);
+  getState() {
+    return this._state;
   },
-  updateNewPostText(newText) {
-    this._state.profilePage.newPostText = newText;
-    this._callSubscriber(this._state);
+  dispatch(action) {
+    if (action.type === "ADD-POST") {
+      let newPost = {
+        id: 3,
+        message: this._state.profilePage.newPostText,
+        like: 10,
+      };
+      this._state.profilePage.posts.push(newPost);
+      this._state.profilePage.newPostText = "";
+      this._callSubscriber(this._state);
+    } else if (action.type === "UPDATE-NEW-POSTITEXT") {
+      this._state.profilePage.newPostText = action.newText;
+      this._callSubscriber(this._state);
+    }
   },
   subscribe(obserber) {
     this._callSubscriber = obserber;
   },
 };
-// window.store = store;
+
+window.store = store;
 export default store;
