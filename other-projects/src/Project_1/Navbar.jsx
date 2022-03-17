@@ -4,8 +4,8 @@ export default function Navbar() {
   return (
     <nav>
       <img className={css.nav_icon} src={logo} />
-      <h3 className="nav_icon">React Facts</h3>
-      <h4 className="nav_title">React Course</h4>
+      <h1 className={css.logo_text}>React Facts</h1>
+      <h3 className={css.logo_title}>React Course</h3>
     </nav>
   );
 }
