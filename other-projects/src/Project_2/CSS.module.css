@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+.nav {
+  display: flex;
+  height: 110px;
+  background-color: rgb(54, 247, 37);
+}
+.logo_text {
+  color: red;
+  padding-left: 50px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 50px;
+  align-self: center;
+}
+.logo_image {
+  height: 100px;
+}
+.description {
+  font-size: 30px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: red;
+}
+div {
+  background-color: yellow;
+}
+.img_stadium img {
+  width: 1440px;
+  height: 500px;
+}
