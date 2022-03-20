@@ -1,14 +1,15 @@
 import MyPosts from "./MyPosts/MyPosts";
-import css from "./Profile.module.css";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div>
-      <div className={css.stadion}>
-        <img src="https://media.gettyimages.com/photos/jun-1996-general-aerial-view-of-old-trafford-before-the-european-c-picture-id943836?s=612x612" />
-      </div>
-      <div>ava + description</div>
-      <MyPosts />
+      <ProfileInfo />
+      <MyPosts
+        posts={props.profilePage.posts}
+        dispatch={props.dispatch}
+        newPostText={props.profilePage.newPostText}
+      />
     </div>
   );
 };
