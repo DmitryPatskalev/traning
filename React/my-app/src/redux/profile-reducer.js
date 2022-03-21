@@ -7,19 +7,31 @@ export const updateNewPostTextActionCreator = (text) => ({
   newText: text,
 });
 
-const profileReducer = (state, action) => {
-  if (action.type === ADD_POST) {
-    let newPost = {
-      id: 3,
-      message: state.newPostText,
-      like: 10,
-    };
-    state.posts.push(newPost);
-    state.newPostText = "";
-  } else if (action.type === UPDATE_NEW_POST_TEXT) {
-    state.newPostText = action.newText;
+let initialState = {
+  posts: [
+    { id: 1, message: "How is it going?", like: 15 },
+    { id: 2, message: "I am fine, thanks!", like: 20 },
+  ],
+  newPostText: "Internet Technologies",
+};
+
+const profileReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case ADD_POST:
+      let newPost = {
+        id: 3,
+        message: state.newPostText,
+        like: 10,
+      };
+      state.posts.push(newPost);
+      state.newPostText = "";
+      return state;
+    case UPDATE_NEW_POST_TEXT:
+      state.newPostText = action.newText;
+      return state;
+    default:
+      return state;
   }
-  return state;
 };
 
 export default profileReducer;
