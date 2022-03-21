@@ -8,9 +8,9 @@ export const updateNewPostTextActionCreator = (text) => ({
   type: UPDATE_NEW_POST_TEXT,
   newText: text,
 });
-export const sendMessageCreator = () => ({ type: UPDATE_NEW_MESSAGE_BODY });
+export const sendMessageCreator = () => ({ type: SEND_MESSAGE });
 export const updateNewMessageBodyCreator = (body) => ({
-  type: SEND_MESSAGE,
+  type: UPDATE_NEW_MESSAGE_BODY,
   body: body,
 });
 
@@ -65,10 +65,10 @@ let store = {
       this._state.profilePage.newPostText = action.newText;
       this._callSubscriber(this._state);
     } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
-      this._state.profilePage.newMessageBody = action.body;
+      this._state.dialogsPage.newMessageBody = action.body;
       this._callSubscriber(this._state);
     } else if (action.type === SEND_MESSAGE) {
-      let body = this._state.profilePage.newMessageBody;
+      let body = this._state.dialogsPage.newMessageBody;
       this._state.dialogsPage.newMessageBody = "";
       this._state.dialogsPage.messages.push({ id: 4, message: body });
       this._callSubscriber(this._state);

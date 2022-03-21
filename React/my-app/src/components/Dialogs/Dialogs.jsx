@@ -8,15 +8,13 @@ import {
 } from "./../../redux/state";
 
 const Dialogs = (props) => {
-  let state = props.state.getState().dialogsPage;
-
-  let dialogsElements = state.dialogs.map((dialog) => (
+  let dialogsElements = props.state.dialogs.map((dialog) => (
     <DialogItem name={dialog.name} id={dialog.id} />
   ));
-  let messagesElements = state.messages.map((messages) => (
+  let messagesElements = props.state.messages.map((messages) => (
     <Message message={messages.message} />
   ));
-  let newMessageBody = state.newMessageBody;
+  let newMessageBody = props.state.newMessageBody;
 
   let onSendMessageClick = () => {
     props.store.dispatch(sendMessageCreator());
