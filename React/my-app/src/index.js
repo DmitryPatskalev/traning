@@ -6,10 +6,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import store from "./redux/redux-store";
-import StoreContext from "./StoreContext";
-import { Provider } from "./StoreContext";
+import { Provider } from "react-redux";
 
-let renderIntiveTree = (state) => {
+let renderIntiveTree = () => {
   ReactDOM.render(
     <React.StrictMode>
       <BrowserRouter>
@@ -26,6 +25,11 @@ store.subscribe(() => {
   let state = store.getState();
   renderIntiveTree(state);
 });
+
+// renderIntiveTree();
+// store.subscribe(() => {
+//   renderIntiveTree();
+// });
 
 reportWebVitals();
 // If you want to start measuring performance in your app, pass a function
