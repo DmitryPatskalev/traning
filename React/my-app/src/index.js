@@ -8,28 +8,16 @@ import { BrowserRouter } from "react-router-dom";
 import store from "./redux/redux-store";
 import { Provider } from "react-redux";
 
-let renderIntiveTree = () => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <BrowserRouter>
-        <Provider store={store}>
-          <App />
-        </Provider>
-      </BrowserRouter>
-    </React.StrictMode>,
-    document.getElementById("root")
-  );
-};
-renderIntiveTree(store.getState());
-store.subscribe(() => {
-  let state = store.getState();
-  renderIntiveTree(state);
-});
-
-// renderIntiveTree();
-// store.subscribe(() => {
-//   renderIntiveTree();
-// });
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
 reportWebVitals();
 // If you want to start measuring performance in your app, pass a function
