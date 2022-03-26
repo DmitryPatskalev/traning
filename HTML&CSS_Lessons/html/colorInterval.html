@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <button id="button1">Click me</button>
+      <br />
+      <button id="button2"></button>
+      <br />
+      <button id="button3"></button>
+    </div>
+
+    <script>
+      let button1 = document.getElementById("button1");
+      let button2 = document.getElementById("button2");
+      let button3 = document.getElementById("button3");
+
+      button1.addEventListener("click", function () {
+        let i = 1;
+        let interval = setInterval(() => {
+          console.log(i++);
+          if (i % 2 == 0) {
+            button1.style.backgroundColor = "red";
+          } else {
+            button1.style.backgroundColor = "white";
+          }
+        }, 500);
+      });
+      button1.addEventListener("click", function () {
+        let i = 1;
+        let interval = setInterval(() => {
+          console.log(i++);
+          if (i % 2 == 0) {
+            button2.style.backgroundColor = "yellow";
+          } else {
+            button2.style.backgroundColor = "white";
+          }
+        }, 750);
+      });
+      button1.addEventListener("click", function () {
+        let i = 1;
+        let interval = setInterval(() => {
+          console.log(i++);
+          if (i % 2 == 0) {
+            button3.style.backgroundColor = "green";
+          } else {
+            button3.style.backgroundColor = "white";
+          }
+        }, 1000);
+      });
+    </script>
+
+    <style>
+      button {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        font-size: 30px;
+        box-shadow: 5px 5px 10px;
+        background-color: white;
+        margin: 20px 300px 30px 600px;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.dialogs {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+
+.dialogsItems {
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+.dialogsItems a {
+  text-decoration: none;
+}
+.messages {
+  padding: 10px;
+}
+.cat {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.dialogsItems :hover {
+  color: green;
+  font-weight: bold;
+}

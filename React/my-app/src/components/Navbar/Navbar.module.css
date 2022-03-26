@@ -5,6 +5,12 @@
   padding: 30px;
 }
 
-.item :hover {
+.item a {
   color: red;
+  text-decoration: none;
+}
+
+.item :hover {
+  color: green;
+  font-weight: bold;
 }
