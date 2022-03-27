@@ -9,9 +9,8 @@ export default function Array() {
     "LiverPool",
   ]);
   const [value, setValue] = useState();
-  function remItem(index) {
-    return setTeam([...team.slice(0, index), ...team.slice(0, index)]);
-  }
+  const [num, setNumber] = useState();
+  const [result, setResult] = useState();
   let list = team.map((elem, index) => {
     return (
       <div>
@@ -19,12 +18,27 @@ export default function Array() {
       </div>
     );
   });
+  let func = (num) => {
+    let sum = 0;
+    let str = String(num);
+    let arr = str.split("");
+    for (let elem of arr) {
+      sum += Number(elem);
+    }
+    return sum;
+  };
   return (
     <div>
       {list}
       <input onChange={(event) => setValue(event.target.value)} />
-      <button onClick={() => setTeam([...team, value])}>ADD TEAM</button>
-      <button onClick={() => remItem(value)}>REMOVE TEAM</button>
+      <button onClick={() => setTeam([...team, value])}>ADD TEAM</button> <br />
+      <hr />
+      <input
+        onChange={(event) => setNumber(event.target.value)}
+        placeholder="input the numbers"
+      />
+      <button onClick={() => setResult(func(num))}>CLICK</button>
+      Sum of numbers = <input value={result} />
     </div>
   );
 }
