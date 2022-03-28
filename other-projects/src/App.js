@@ -1,11 +1,14 @@
 // import AppProject_1 from "./Project_1/AppProject_1";
-import AppProject_2 from "./Project_2/AppProject_2";
+// import AppProject_2 from "./Project_2/AppProject_2";
+
+import AppProject_3 from "./Project_3/AppProject3";
 
 function App() {
   return (
     <div>
       {/* <AppProject_1 /> */}
-      <AppProject_2 />
+      {/* <AppProject_2 /> */}
+      <AppProject_3 />
     </div>
   );
 }
