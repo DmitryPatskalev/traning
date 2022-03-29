@@ -17,10 +17,27 @@ export default function AppProject_4() {
     { id: 3, name: "product3", cost: 300 },
   ];
   const [prod, setProds] = useState(initProds);
+  let addToCart = (id) => {
+    setProds(
+      prod.map((elem) => {
+        if (elem.id == id) {
+          elem.inCart = true;
+        }
+        return elem;
+      })
+    );
+  };
 
   let products = prod.map((elem) => {
     return (
-      <Product key={prod.id} id={elem.id} name={elem.name} cost={elem.cost} />
+      <Product
+        key={prod.id}
+        id={elem.id}
+        name={elem.name}
+        cost={elem.cost}
+        inCart={elem.inCart}
+        addToCart={addToCart}
+      />
     );
   });
 
@@ -29,6 +46,7 @@ export default function AppProject_4() {
       {result}
       <hr />
       {products}
+      <hr />
     </div>
   );
 }
