@@ -2,8 +2,9 @@
 // import AppProject_2 from "./Project_2/AppProject_2";
 // import AppProject_3 from "./Project_3/AppProject3";
 // import AppProject_4 from "./Project_4/AppProject_4";
+// import AppStore from "./Project_5/AppStore";
 
-import AppStore from "./Project_5/AppStore";
+import AppOrderTable from "./Project_6/AppTableOrder";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       {/* <AppProject_2 /> */}
       {/* <AppProject_3 /> */}
       {/* <AppProject_4 /> */}
-      <AppStore />
+      {/* <AppStore /> */}
+      <AppOrderTable />
     </div>
   );
 }
