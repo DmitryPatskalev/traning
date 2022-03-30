@@ -1,0 +1,19 @@
+.style {
+  text-align: center;
+  margin: 100px;
+}
+.button {
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  margin: 10px;
+}
+.input {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.span {
+  font-size: 20px;
+}
