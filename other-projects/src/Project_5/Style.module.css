@@ -1,0 +1,19 @@
+/* .body {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+} */
+
+.image {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.image img {
+  width: 150px;
+  height: 200px;
+  margin: 10px 10px 10px 30px;
+}
+.title {
+  font-size: 20px;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.style {
+  display: grid;
+  grid-template-columns: 500px;
+  align-self: center;
+}
+.table {
+  border: 3px solid green;
+}
+
+.table th,
+td {
+  border: 1px solid green;
+  text-align: center;
+}
+
+.input {
+  width: 30px;
+  text-align: center;
+  border-radius: 10%;
+}
+.button {
+  border-radius: 10%;
+}
