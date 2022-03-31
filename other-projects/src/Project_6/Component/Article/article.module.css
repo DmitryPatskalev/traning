@@ -1,0 +1,16 @@
+.mobileImage {
+  display: grid;
+  grid-template-columns: repeat(5, 240px);
+}
+
+.mobileImage img {
+  width: 190px;
+  height: 240px;
+  padding: 10px;
+  border-radius: 13%;
+}
+.nameItem {
+  text-align: center;
+  padding: 0px 0px 0px 40px;
+  font-size: 20px;
+}

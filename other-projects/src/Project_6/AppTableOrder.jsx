@@ -1,4 +1,4 @@
-import { useState } from "react";
+import Count from "./Count";
 import css from "./Style.module.css";
 
 const listOfProduct = [
@@ -29,7 +29,6 @@ export default function AppOrderTable() {
             <th></th>
           </tr>
         </tfoot>
-
         {listOfProduct.map((elem) => {
           return (
             <tr className={css.elem}>
@@ -40,35 +39,12 @@ export default function AppOrderTable() {
               <td>
                 <Count />
               </td>
-              <td>{<Sum />}</td>
+              <td></td>
             </tr>
           );
         })}
       </table>
+      <Count />
     </div>
   );
-}
-
-export function Count() {
-  const [num, setNum] = useState(0);
-
-  return (
-    <div>
-      <button className={css.button} onClick={() => setNum(Number(num) - 1)}>
-        -
-      </button>
-      <input
-        value={num}
-        onChange={(e) => setNum(e.target.value)}
-        className={css.input}
-      />
-      <button className={css.button} onClick={() => setNum(Number(num + 1))}>
-        +
-      </button>
-      <Sum num={num} />
-    </div>
-  );
-}
-export function Sum(props) {
-  return <div>{props.num}</div>;
 }
