@@ -3,8 +3,7 @@
 // import AppProject_3 from "./Project_3/AppProject3";
 // import AppProject_4 from "./Project_4/AppProject_4";
 // import AppStore from "./Project_5/AppStore";
-
-import AppOrderTable from "./Project_6/AppTableOrder";
+import MobileSrore from "./Project_6/MobileStore";
 
 function App() {
   return (
@@ -14,7 +13,7 @@ function App() {
       {/* <AppProject_3 /> */}
       {/* <AppProject_4 /> */}
       {/* <AppStore /> */}
-      <AppOrderTable />
+      <MobileSrore />
     </div>
   );
 }
