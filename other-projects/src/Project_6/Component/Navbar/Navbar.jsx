@@ -1,3 +1,5 @@
+import Characteristic from "../Article/Characteristics";
+
 export default function Navbar() {
   return (
     <div>

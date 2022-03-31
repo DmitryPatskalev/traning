@@ -4,7 +4,7 @@
     "header header "
     "nav article"
     "footer footer ";
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 60px 1fr;
   grid-template-columns: 15% 1fr;
   grid-gap: 10px;
 
@@ -15,7 +15,7 @@
   grid-area: header;
   background-color: rgb(12, 243, 135);
   text-align: center;
-  padding: 30px;
+  padding: 5px;
   font-size: 50px;
   font-family: Monotype Corsiva;
 }
