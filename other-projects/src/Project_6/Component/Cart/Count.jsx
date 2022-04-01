@@ -1,4 +1,4 @@
-import css from "./../../Style.module.css";
+import css from "./style.module.css";
 import { useState } from "react";
 
 export default function Count() {

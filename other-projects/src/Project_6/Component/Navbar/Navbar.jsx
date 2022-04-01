@@ -1,12 +1,10 @@
-import { NavLink, Route, Routes } from "react-router-dom";
-import AppOrderTable from "../Cart/AppTableOrder";
-// import Characteristic from "../Article/Characteristics";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
       <div>
-        <NavLink to="/main">Гланая</NavLink>
+        <NavLink to="/main">Главная</NavLink>
       </div>
       <div>
         <NavLink to="/photo">Фотогалерея</NavLink>
@@ -14,9 +12,6 @@ export default function Navbar() {
       <div>
         <NavLink to="/cart">Корзина</NavLink>
       </div>
-      <Routes>
-        <Route path="/cart" element={<AppOrderTable />} />
-      </Routes>
     </div>
   );
 }

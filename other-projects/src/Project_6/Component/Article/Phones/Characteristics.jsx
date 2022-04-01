@@ -4,8 +4,8 @@ export default function Characteristic() {
       OS: "OS: ",
       Screen: "Screen: ",
       Processor: "Processor:",
-      Storage: "Storage",
-      Battery: "Battery",
+      Storage: "Storage:",
+      Battery: "Battery:",
     },
   ];
 
