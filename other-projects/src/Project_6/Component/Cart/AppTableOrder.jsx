@@ -1,6 +1,5 @@
 import Count from "./Count";
-import css from "./Style.module.css";
-
+import css from "./../../Style.module.css";
 const listOfProduct = [
   { id: 1, name: "Samsung", model: "S21", cost: 1300 },
   { id: 2, name: "Apple", model: "X13", cost: 1550 },
@@ -8,7 +7,6 @@ const listOfProduct = [
   { id: 4, name: "Xiaomi", model: "Redmi11", cost: 950 },
   { id: 5, name: "Huawei", model: "Nova9", cost: 1300 },
 ];
-
 export default function AppOrderTable() {
   return (
     <div className={css.style}>
@@ -44,7 +42,6 @@ export default function AppOrderTable() {
           );
         })}
       </table>
-      <Count />
     </div>
   );
 }

@@ -16,6 +16,7 @@ export default function MainPage() {
         <Article />
       </div>
       <div className={css.footer}>Footer</div>
+      {/* <Footer /> */}
     </div>
   );
 }
