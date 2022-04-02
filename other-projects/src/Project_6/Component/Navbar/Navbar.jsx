@@ -1,11 +1,17 @@
-import Characteristic from "../Article/Characteristics";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
-      <div>Главная</div>
-      <div>Ассортимент</div>
-      <div>Корзина</div>
+      <div>
+        <NavLink to="/main">Главная</NavLink>
+      </div>
+      <div>
+        <NavLink to="/photo">Фотогалерея</NavLink>
+      </div>
+      <div>
+        <NavLink to="/cart">Корзина</NavLink>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Article from "./Component/Article/Article";
+import Footer from "./Component/Footer/Footer";
 import Header from "./Component/Header/Header";
 import Navbar from "./Component/Navbar/Navbar";
 import css from "./Style.module.css";
@@ -15,7 +16,9 @@ export default function MainPage() {
       <div className={css.article}>
         <Article />
       </div>
-      <div className={css.footer}>Footer</div>
+      <div className={css.footer}>
+        <Footer />
+      </div>
     </div>
   );
 }
