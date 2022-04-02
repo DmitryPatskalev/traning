@@ -63,10 +63,6 @@ function Count() {
       <button className={css.button} onClick={() => setNum(num + 1)}>
         +
       </button>
-      <Sum num={num} />
     </div>
   );
-}
-function Sum(props) {
-  return <div>{props.num}</div>;
 }
