@@ -23,6 +23,14 @@ export default function Apptable() {
           <th>Count</th>
           <th>Equal</th>
         </tr>
+        <tfoot>
+          <tr>
+            <td colSpan={7} style={{ textAlign: "right" }}>
+              Total
+            </td>
+            <td></td>
+          </tr>
+        </tfoot>
         {teams.map((elem) => {
           return (
             <tr>
@@ -40,7 +48,6 @@ export default function Apptable() {
           );
         })}
       </table>
-      <Count />
     </div>
   );
 }
@@ -56,6 +63,10 @@ function Count() {
       <button className={css.button} onClick={() => setNum(num + 1)}>
         +
       </button>
+      <Sum num={num} />
     </div>
   );
+}
+function Sum(props) {
+  return <div>{props.num}</div>;
 }
