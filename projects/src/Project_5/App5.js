@@ -7,6 +7,7 @@ export default function App5() {
       <StructursAdd />
       <hr />
       <AddToInput />
+      <hr />
     </div>
   );
 }

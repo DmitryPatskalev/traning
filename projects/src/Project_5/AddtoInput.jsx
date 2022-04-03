@@ -22,6 +22,34 @@ export default function AddToInput() {
       <input onChange={(event) => changeHandler(1, event)} />
       <input onChange={(event) => changeHandler(2, event)} />
       {getSum(notes)}
+      <hr />
+      <RedArray />
+    </div>
+  );
+}
+
+function RedArray() {
+  const [num, setNum] = useState([1, 2, 3, 4, 5]);
+  const [editNum, setEditNum] = useState();
+  let arr = num.map((elem, index) => {
+    return (
+      <p key={index} onClick={() => setEditNum(index)}>
+        {elem}
+      </p>
+    );
+  });
+
+  function changeItem(event) {
+    setNum([
+      ...num.slice(0, editNum),
+      event.target.value,
+      ...num.slice(editNum + 1),
+    ]);
+  }
+  return (
+    <div>
+      {arr}
+      <input value={editNum ? num[editNum] : ""} onChange={changeItem} />
     </div>
   );
 }
