@@ -30,7 +30,7 @@ export default function AddToInput() {
 
 function RedArray() {
   const [num, setNum] = useState([1, 2, 3, 4, 5]);
-  const [editNum, setEditNum] = useState();
+  const [editNum, setEditNum] = useState(null);
   let arr = num.map((elem, index) => {
     return (
       <p key={index} onClick={() => setEditNum(index)}>
