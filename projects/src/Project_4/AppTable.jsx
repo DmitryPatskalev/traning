@@ -53,13 +53,16 @@ export default function Apptable() {
 }
 function Count() {
   const [num, setNum] = useState(0);
-
   return (
     <div>
       <button className={css.button} onClick={() => setNum(num - 1)}>
         -
       </button>
-      <input className={css.input} value={num} />
+      <input
+        className={css.input}
+        value={num}
+        onChange={(event) => setNum(event.target.value)}
+      />
       <button className={css.button} onClick={() => setNum(num + 1)}>
         +
       </button>
