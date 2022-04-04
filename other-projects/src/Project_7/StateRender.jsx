@@ -12,7 +12,11 @@ export default function StateRender() {
         {visible ? "HIDE" : "SHOW"}
       </button>
       {elem}
+      <hr />
       <Description />
+      <hr />
+      <RedactTag />
+      <hr />
     </div>
   );
 }
@@ -49,9 +53,28 @@ function Description() {
       <p>
         {elem.name}
         {desc}
-        <button onClick={() => showDesc(elem.id)}>SHOW</button>
+        <button onClick={() => showDesc(elem.id)}>
+          {desc ? "HIDE" : "SHOW"}
+        </button>
       </p>
     );
   });
   return <div>{result}</div>;
+}
+function RedactTag() {
+  const [value, setValue] = useState("text");
+  const [isEdit, setIsEdit] = useState(false);
+  let elem;
+  if (!isEdit) {
+    elem = <span onClick={() => setIsEdit(true)}>{value}</span>;
+  } else {
+    elem = (
+      <input
+        value={value}
+        onChange={(event) => setValue(event.target.value)}
+        onBlur={() => setIsEdit(false)}
+      />
+    );
+  }
+  return <p>{elem}</p>;
 }
