@@ -3,21 +3,24 @@
 // import AppProject_3 from "./Project_3/AppProject3";
 // import AppProject_4 from "./Project_4/AppProject_4";
 // import AppStore from "./Project_5/AppStore";
-import { BrowserRouter } from "react-router-dom";
-import MainPage from "./Project_6/Main";
+// import { BrowserRouter } from "react-router-dom";
+// import MainPage from "./Project_6/Main";
+
+import StateRender from "./Project_7/StateRender";
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <MainPage />
-      </BrowserRouter>
+      </BrowserRouter> */}
 
       {/* <AppProject_1 /> */}
       {/* <AppProject_2 /> */}
       {/* <AppProject_3 /> */}
       {/* <AppProject_4 /> */}
       {/* <AppStore /> */}
+      <StateRender />
     </div>
   );
 }
