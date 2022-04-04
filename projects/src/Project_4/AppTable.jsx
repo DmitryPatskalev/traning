@@ -23,6 +23,14 @@ export default function Apptable() {
           <th>Count</th>
           <th>Equal</th>
         </tr>
+        <tfoot>
+          <tr>
+            <td colSpan={7} style={{ textAlign: "right" }}>
+              Total
+            </td>
+            <td></td>
+          </tr>
+        </tfoot>
         {teams.map((elem) => {
           return (
             <tr>
@@ -40,19 +48,21 @@ export default function Apptable() {
           );
         })}
       </table>
-      <Count />
     </div>
   );
 }
 function Count() {
   const [num, setNum] = useState(0);
-
   return (
     <div>
       <button className={css.button} onClick={() => setNum(num - 1)}>
         -
       </button>
-      <input className={css.input} value={num} />
+      <input
+        className={css.input}
+        value={num}
+        onChange={(event) => setNum(event.target.value)}
+      />
       <button className={css.button} onClick={() => setNum(num + 1)}>
         +
       </button>
