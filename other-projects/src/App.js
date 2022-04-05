@@ -4,7 +4,9 @@
 // import AppProject_4 from "./Project_4/AppProject_4";
 // import AppStore from "./Project_5/AppStore";
 
-import App8 from "./Project_8/App8";
+import PracticReact from "./PracticReact/PracticReact";
+
+// import App8 from "./Project_8/App8";
 
 // import { BrowserRouter } from "react-router-dom";
 // import MainPage from "./Project_6/Main";
@@ -24,7 +26,8 @@ function App() {
       {/* <AppStore /> */}
       {/* <StateRender /> */}
       {/* <AddElemTable /> */}
-      <App8 />
+      {/* <App8 /> */}
+      <PracticReact />
     </div>
   );
 }
