@@ -4,21 +4,21 @@
 // import AppProject_4 from "./Project_4/AppProject_4";
 // import AppStore from "./Project_5/AppStore";
 
-import PracticReact from "./PracticReact/PracticReact";
+// import PracticReact from "./PracticReact/PracticReact";
 
 // import App8 from "./Project_8/App8";
 
-// import { BrowserRouter } from "react-router-dom";
-// import MainPage from "./Project_6/Main";
+import { BrowserRouter } from "react-router-dom";
+import MainPage from "./MobileStore/Main";
 
 // import StateRender from "./Project_7/StateRender";
 
 function App() {
   return (
     <div>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <MainPage />
-      </BrowserRouter> */}
+      </BrowserRouter>
       {/* <AppProject_1 /> */}
       {/* <AppProject_2 /> */}
       {/* <AppProject_3 /> */}
@@ -27,7 +27,7 @@ function App() {
       {/* <StateRender /> */}
       {/* <AddElemTable /> */}
       {/* <App8 /> */}
-      <PracticReact />
+      {/* <PracticReact /> */}
     </div>
   );
 }
