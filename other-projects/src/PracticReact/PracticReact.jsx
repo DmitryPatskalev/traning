@@ -2,6 +2,7 @@ import css from "./css.module.css";
 import JSX_lesson2 from "./Lesson_2_JSX";
 import Render from "./Lesson_3_Render";
 import Props from "./Lesson_4_Props";
+import OnClick from "./Lesson_6_onClick";
 
 export default function PracticReact() {
   return (
@@ -11,6 +12,8 @@ export default function PracticReact() {
       <Render />
       <hr />
       <Props />
+      <hr />
+      <OnClick />
     </div>
   );
 }
