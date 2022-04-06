@@ -1,0 +1,22 @@
+.table {
+  border: 3px solid green;
+  text-align: center;
+}
+.table th {
+  border: 3px solid green;
+}
+
+.td {
+  border: 1px solid green;
+  width: 150px;
+}
+.tableNumber {
+  text-align: center;
+  width: 20px;
+  border: 1px solid green;
+}
+.tdEl {
+  text-align: center;
+  width: 50px;
+  border: 1px solid green;
+}
