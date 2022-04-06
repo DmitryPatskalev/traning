@@ -1,0 +1,9 @@
+.table {
+  border: 3px solid green;
+}
+
+.table th,
+td {
+  border: 1px solid green;
+  text-align: center;
+}

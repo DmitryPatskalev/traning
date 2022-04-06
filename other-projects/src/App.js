@@ -4,7 +4,9 @@
 // import AppProject_4 from "./Project_4/AppProject_4";
 // import AppStore from "./Project_5/AppStore";
 
-import PracticReact from "./PracticReact/PracticReact";
+import AppProject9 from "./Project_9/AppProject_9";
+
+// import PracticReact from "./PracticReact/PracticReact";
 
 // import App8 from "./Project_8/App8";
 
@@ -27,7 +29,8 @@ function App() {
       {/* <StateRender /> */}
       {/* <AddElemTable /> */}
       {/* <App8 /> */}
-      <PracticReact />
+      {/* <PracticReact /> */}
+      <AppProject9 />
     </div>
   );
 }
