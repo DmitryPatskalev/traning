@@ -5,7 +5,6 @@ let listOfProduct = [{ id: 1, brand: "Samsung", model: "S21", price: 1500 }];
 export default function AppProject9() {
   const [value, setValue] = useState(listOfProduct);
   const [par, setPar] = useState();
-
   let result = value.map((elem) => {
     return (
       <tr className={css.table}>
