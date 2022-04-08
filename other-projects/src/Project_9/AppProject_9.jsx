@@ -23,6 +23,8 @@ export default function AppProject9() {
       <p onChange={(event) => setValue(event.target.value)}></p>
       <button onClick={() => setPar(result)}>Add to Cart</button>
       <Table par={par} />
+      <hr />
+      <ArraySort />
     </div>
   );
 }
@@ -42,15 +44,30 @@ function Table(props) {
 }
 function Sum() {
   const [input, setInput] = useState(0);
+
   return (
     <div>
-      <button onClick={() => setInput(input - 1)}>-</button>
+      <button onClick={() => setInput(Number(input) - 1)}>-</button>
       <input
         className={css.input}
         value={input}
         onChange={(event) => setInput(event.target.value)}
       />
-      <button onClick={() => setInput(input + 1)}>+</button>
+      <button onClick={() => setInput(Number(input) + 1)}>+</button>
+    </div>
+  );
+}
+function ArraySort() {
+  const [num, setNum] = useState([]);
+  const [value, setValue] = useState();
+  let arr = num.map((elem) => {
+    return <p>{elem}</p>;
+  });
+  return (
+    <div>
+      {arr}
+      <input value={value} onChange={(event) => setValue(event.target.value)} />
+      <button onClick={() => setNum([...num, ...value])}>Click</button>
     </div>
   );
 }

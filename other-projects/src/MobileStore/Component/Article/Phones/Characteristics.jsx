@@ -1,11 +1,11 @@
-export default function Characteristic() {
+export default function Characteristic(props) {
   let list = [
     {
-      OS: "OS: ",
-      Screen: "Screen: ",
-      Processor: "Processor:",
-      Storage: "Storage:",
-      Battery: "Battery:",
+      OS: "OS: " + props.os,
+      Screen: "Screen: " + props.screen,
+      Processor: "Processor: " + props.processor,
+      Storage: "Storage: " + props.storage,
+      Battery: "Battery: " + props.battery,
     },
   ];
 
