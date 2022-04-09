@@ -5,9 +5,9 @@
 // import App4 from "./Project_4/App4";
 // import App6 from "./Project_6/App6";
 
-import CreateTable from "./Project_8/Table";
+// import CreateTable from "./Project_8/Table";
 
-// import AddText from "./Project_7/AddText";
+import AddText from "./Project_7/AddText";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       {/* <App4 /> */}
       {/* <App5 /> */}
       {/* <App6 /> */}
-      {/* <AddText /> */}
-      <CreateTable />
+      <AddText />
+      {/* <CreateTable /> */}
     </div>
   );
 }
