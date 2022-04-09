@@ -6,4 +6,15 @@
 td {
   border: 1px solid green;
   text-align: center;
+  width: 100px;
+}
+.input {
+  width: 30px;
+  text-align: center;
+}
+.table .par {
+  width: 50px;
+}
+.table .price {
+  width: 70px;
 }

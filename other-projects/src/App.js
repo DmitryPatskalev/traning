@@ -10,17 +10,18 @@ import AppProject9 from "./Project_9/AppProject_9";
 
 // import App8 from "./Project_8/App8";
 
-// import { BrowserRouter } from "react-router-dom";
-// import MainPage from "./MobileStore/Main";
+import { BrowserRouter } from "react-router-dom";
+import MainPage from "./MobileStore/Main";
 
 // import StateRender from "./Project_7/StateRender";
 
 function App() {
   return (
     <div>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <MainPage />
-      </BrowserRouter> */}
+      </BrowserRouter>
+
       {/* <AppProject_1 /> */}
       {/* <AppProject_2 /> */}
       {/* <AppProject_3 /> */}
@@ -30,7 +31,7 @@ function App() {
       {/* <AddElemTable /> */}
       {/* <App8 /> */}
       {/* <PracticReact /> */}
-      <AppProject9 />
+      {/* <AppProject9 /> */}
     </div>
   );
 }

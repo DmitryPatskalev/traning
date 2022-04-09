@@ -1,5 +1,6 @@
 import Count from "./Count";
 import css from "./style.module.css";
+
 const listOfProduct = [
   { id: 1, name: "Samsung", model: "S21", cost: 1300 },
   { id: 2, name: "Apple", model: "X13", cost: 1550 },
@@ -17,7 +18,7 @@ export default function AppOrderTable() {
           <th>MODEL</th>
           <th>COST $</th>
           <th>AMOUNT</th>
-          <th>SUM</th>
+          <th className={css.sum}>SUM</th>
         </tr>
         <tfoot>
           <tr>
@@ -30,10 +31,10 @@ export default function AppOrderTable() {
         {listOfProduct.map((elem) => {
           return (
             <tr>
-              <td>{elem.id}</td>
-              <td>{elem.name}</td>
-              <td>{elem.model}</td>
-              <td>{elem.cost}</td>
+              <td className={css.id}>{elem.id}</td>
+              <td className={css.name}>{elem.name}</td>
+              <td className={css.model}>{elem.model}</td>
+              <td className={css.cost}>{elem.cost}</td>
               <td>
                 <Count />
               </td>
