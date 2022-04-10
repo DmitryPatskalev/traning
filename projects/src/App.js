@@ -5,7 +5,9 @@
 // import App4 from "./Project_4/App4";
 // import App6 from "./Project_6/App6";
 
-import TicTacToe from "./TicTacToe/TicTacToe";
+import Huk from "./Project_9/Project9";
+
+// import TicTacToe from "./TicTacToe/TicTacToe";
 
 // import CreateTable from "./Project_8/Table";
 
@@ -22,7 +24,8 @@ function App() {
       {/* <App6 /> */}
       {/* <AddText /> */}
       {/* <CreateTable /> */}
-      <TicTacToe />
+      {/* <TicTacToe /> */}
+      <Huk />
     </div>
   );
 }
