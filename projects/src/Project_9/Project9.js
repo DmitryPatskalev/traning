@@ -5,6 +5,7 @@ import CountFunc from "./CountFunc";
 import css from "./css.module.css";
 import ObjectState from "./ObjectState";
 import ToDoList from "./ToDoFunc";
+import UseEffect from "./UseEffect";
 
 export default function Huk() {
   return (
@@ -18,6 +19,8 @@ export default function Huk() {
       <ClassToDoList />
       <hr />
       <ToDoList />
+      <hr />
+      <UseEffect />
     </div>
   );
 }
