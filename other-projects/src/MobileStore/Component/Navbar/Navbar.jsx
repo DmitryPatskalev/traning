@@ -1,4 +1,5 @@
 import css from "./navbar.module.css";
+import cart from "./../Image/cart.jpeg";
 import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
@@ -12,6 +13,9 @@ export default function Navbar() {
       </div>
       <div className={css.link}>
         <NavLink to="/cart">Корзина</NavLink>
+        <p>
+          <img src={cart} className={css.cart} />
+        </p>
       </div>
     </div>
   );
