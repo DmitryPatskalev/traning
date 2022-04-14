@@ -45,3 +45,20 @@ function interval() {
 }
 
 console.log(interval());
+
+function getInt(arr1, arr2) {
+  var result = [];
+
+  for (var elem of arr1) {
+    if (inArray(elem, arr2)) {
+      result.push(elem);
+    }
+  }
+
+  return result;
+}
+
+function inArray(elem, arr) {
+  return arr.indexOf(elem) !== -1;
+}
+console.log(getInt([1, 2, 3, 10], [2, 3, 4, 5, 7, 8, 9, 10]));
