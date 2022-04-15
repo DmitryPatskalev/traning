@@ -5,13 +5,15 @@
 // import App4 from "./Project_4/App4";
 // import App6 from "./Project_6/App6";
 
-import Huk from "./Project_9/Project9";
+// import Huk from "./Project_9/Project9";
 
 // import TicTacToe from "./TicTacToe/TicTacToe";
 
 // import CreateTable from "./Project_8/Table";
 
 // import AddText from "./Project_7/AddText";
+
+import SportLoto from "./SportLoto/SportLoto";
 
 function App() {
   return (
@@ -25,7 +27,8 @@ function App() {
       {/* <AddText /> */}
       {/* <CreateTable /> */}
       {/* <TicTacToe /> */}
-      <Huk />
+      {/*<Huk />*/}
+        <SportLoto />
     </div>
   );
 }
