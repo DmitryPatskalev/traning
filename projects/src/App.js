@@ -13,7 +13,8 @@
 
 // import AddText from "./Project_7/AddText";
 
-import SportLoto from "./SportLoto/SportLoto";
+
+import Sportloto from "./SportLoto/SportLoto";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
       {/* <CreateTable /> */}
       {/* <TicTacToe /> */}
       {/*<Huk />*/}
-        <SportLoto />
+        <Sportloto />
     </div>
   );
 }

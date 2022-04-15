@@ -1,0 +1,15 @@
+.body {
+    text-align: center;
+    margin: 100px;
+}
+.button, .button2{
+    margin: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: yellow;
+}
+.button2 {
+    background-color: greenyellow;
+}
