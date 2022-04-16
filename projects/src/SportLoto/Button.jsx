@@ -15,8 +15,6 @@ export default function Buttons() {
     });
 
     return <div>
-        {/*<input value={par} onChange={event => setPar(event.target.value)}/>*/}
-        {/*<button onClick={()=>setValue([...value,par])}>Add</button>*/}
         {result}
     </div>;
 }
