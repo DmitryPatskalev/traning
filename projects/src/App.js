@@ -17,21 +17,21 @@
 import Sportloto from "./SportLoto/SportLoto";
 
 function App() {
-  return (
-    <div>
-      {/* <App1 /> */}
-      {/* <App2 /> */}
-      {/* <App3 /> */}
-      {/* <App4 /> */}
-      {/* <App5 /> */}
-      {/* <App6 /> */}
-      {/* <AddText /> */}
-      {/* <CreateTable /> */}
-      {/* <TicTacToe /> */}
-      {/*<Huk />*/}
-        <Sportloto />
-    </div>
-  );
+    return (
+        <div>
+            {/* <App1 /> */}
+            {/* <App2 /> */}
+            {/* <App3 /> */}
+            {/* <App4 /> */}
+            {/* <App5 /> */}
+            {/* <App6 /> */}
+            {/* <AddText /> */}
+            {/* <CreateTable /> */}
+            {/* <TicTacToe /> */}
+            {/*<Huk />*/}
+            <Sportloto/>
+        </div>
+    );
 }
 
 export default App;

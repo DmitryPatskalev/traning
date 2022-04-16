@@ -9,6 +9,6 @@ export default function ArrayOfNumbers() {
     };
     console.log(getArray(36))
     return <div>
-
+        {/*{getArray(36)}*/}
     </div>
 }

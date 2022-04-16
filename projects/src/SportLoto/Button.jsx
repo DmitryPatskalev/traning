@@ -2,7 +2,7 @@ import {useState} from "react";
 import css from "./Style.module.css";
 
 export default function Buttons() {
-    const [value, setValue] = useState([1, 2, 3]);
+    const [value, setValue] = useState();
     const [par, setPar] = useState();
 
 
