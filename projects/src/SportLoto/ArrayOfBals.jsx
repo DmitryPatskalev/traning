@@ -37,6 +37,7 @@ export default function ArrayOfBalls() {
     let myNum = [8, 30, 15, 3, 27]
     let randomFiveNumbers = randoms(arrayOfnumbers, 5)
 
+
     const [value, setValue] = useState(randomFiveNumbers);
     let result = value.map((elem) => {
         return (
@@ -83,6 +84,7 @@ export default function ArrayOfBalls() {
 
 
         <h1 className={css.h1}> Спорт Лото 5 из 36</h1>
+
         <p>
             <span className={css.span}>5 случайных цифр из 36 =></span>
             {result}
