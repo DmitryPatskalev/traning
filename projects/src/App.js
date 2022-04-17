@@ -14,10 +14,15 @@
 // import AddText from "./Project_7/AddText";
 
 
-import Sportloto from "./SportLoto/SportLoto";
+// import Sportloto from "./SportLoto/SportLoto";
+
+
+import RouteTraning from "./Project_10/Route";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
     return (
+
         <div>
             {/* <App1 /> */}
             {/* <App2 /> */}
@@ -29,8 +34,16 @@ function App() {
             {/* <CreateTable /> */}
             {/* <TicTacToe /> */}
             {/*<Huk />*/}
-            <Sportloto/>
+            {/*<Sportloto/>*/}
+
+            <BrowserRouter>
+                <RouteTraning/>
+            </BrowserRouter>
+
+
         </div>
+
+
     );
 }
 

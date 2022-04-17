@@ -34,7 +34,7 @@ export default function ArrayOfBalls() {
         return result;
     };
     let arrayOfnumbers = getArray(36)
-    let myNumbers = [1, 9, 25, 19, 34];
+    let myNum = [8, 30, 15, 3, 27]
     let randomFiveNumbers = randoms(arrayOfnumbers, 5)
 
     const [value, setValue] = useState(randomFiveNumbers);
@@ -46,8 +46,8 @@ export default function ArrayOfBalls() {
         );
     });
 
-    const [value2, setValue2] = useState(myNumbers);
-    let myarr = value2.map((elem) => {
+    const [myNumbers, setMyNumbers] = useState(myNum);
+    let myarr = myNumbers.map((elem) => {
         return (
             <button key={elem} className={css.button2}>
                 {elem}
@@ -80,6 +80,8 @@ export default function ArrayOfBalls() {
 
 
     return <div>
+
+
         <h1 className={css.h1}> Спорт Лото 5 из 36</h1>
         <p>
             <span className={css.span}>5 случайных цифр из 36 =></span>

@@ -1,0 +1,25 @@
+.body {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "navbar article";
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 15% 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+}
+.header {
+    grid-area: header;
+    background-color: deepskyblue;
+    text-align: center;
+}
+.navbar {
+    grid-area: navbar;
+    background-color: greenyellow;
+    text-align: center;
+    padding: 20px;
+}
+.article {
+    grid-area: article;
+    background-color: deeppink;
+}
