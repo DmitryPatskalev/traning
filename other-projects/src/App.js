@@ -4,7 +4,9 @@
 // import AppProject_4 from "./Project_4/AppProject_4";
 // import AppStore from "./Project_5/AppStore";
 
-import Project10 from "./Project_10/Project_10";
+import Loto from "./Loto/Loto";
+
+// import Project10 from "./Project_10/Project_10";
 
 // import AddToCart from "./Project_10/AddToCart";
 
@@ -37,7 +39,8 @@ function App() {
       {/* <PracticReact /> */}
       {/* <AppProject9 /> */}
       {/* <AddToCart /> */}
-      <Project10 />
+      {/* <Project10 /> */}
+      <Loto />
     </div>
   );
 }
