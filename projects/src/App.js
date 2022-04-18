@@ -5,7 +5,7 @@
 // import App4 from "./Project_4/App4";
 // import App6 from "./Project_6/App6";
 
-import Huk from "./Project_9/Project9";
+// import Huk from "./Project_9/Project9";
 
 // import TicTacToe from "./TicTacToe/TicTacToe";
 
@@ -13,21 +13,38 @@ import Huk from "./Project_9/Project9";
 
 // import AddText from "./Project_7/AddText";
 
+
+import Sportloto from "./SportLoto/SportLoto";
+
+
+// import RouteTraning from "./Project_10/Route";
+// import {BrowserRouter} from "react-router-dom";
+
 function App() {
-  return (
-    <div>
-      {/* <App1 /> */}
-      {/* <App2 /> */}
-      {/* <App3 /> */}
-      {/* <App4 /> */}
-      {/* <App5 /> */}
-      {/* <App6 /> */}
-      {/* <AddText /> */}
-      {/* <CreateTable /> */}
-      {/* <TicTacToe /> */}
-      <Huk />
-    </div>
-  );
+    return (
+
+        <div>
+            {/* <App1 /> */}
+            {/* <App2 /> */}
+            {/* <App3 /> */}
+            {/* <App4 /> */}
+            {/* <App5 /> */}
+            {/* <App6 /> */}
+            {/* <AddText /> */}
+            {/* <CreateTable /> */}
+            {/* <TicTacToe /> */}
+            {/*<Huk />*/}
+            <Sportloto/>
+
+            {/*<BrowserRouter>*/}
+            {/*    <RouteTraning/>*/}
+            {/*</BrowserRouter>*/}
+
+
+        </div>
+
+
+    );
 }
 
 export default App;
