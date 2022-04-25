@@ -1,6 +1,9 @@
 .body {
+  display: grid;
   text-align: center;
-  margin: 100px;
+  padding: 100px;
+  background-color: lightgray;
+  height: 70vh;
 }
 .buttonUp,
 .buttonDown,
