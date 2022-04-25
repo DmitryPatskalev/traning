@@ -14,7 +14,8 @@
 // import AddText from "./Project_7/AddText";
 
 
-import Sportloto from "./SportLoto/SportLoto";
+// import Sportloto from "./SportLoto/SportLoto";
+import TraningReactInGrid from "./Project_11/TraningReactInGrid";
 
 
 // import RouteTraning from "./Project_10/Route";
@@ -34,11 +35,12 @@ function App() {
             {/* <CreateTable /> */}
             {/* <TicTacToe /> */}
             {/*<Huk />*/}
-            <Sportloto/>
+            {/*<Sportloto/>*/}
 
             {/*<BrowserRouter>*/}
             {/*    <RouteTraning/>*/}
             {/*</BrowserRouter>*/}
+            <TraningReactInGrid/>
 
 
         </div>

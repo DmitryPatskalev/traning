@@ -1,0 +1,19 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+}
+.odd{
+    background-color: lightyellow;
+}
+.even {
+    background-color: lemonchiffon;
+
+}
+.odd, .even {
+    width: 450px;
+    height: 210px;
+    text-align: center;
+    padding: 10px;
+}
