@@ -4,7 +4,7 @@ import gerb from "./..//Photo/gerb.jpg";
 const Header = () => {
   return (
     <header className={css.header}>
-      <img src={gerb} />
+      <img src={gerb} alt='gerb' />
     </header>
   );
 };

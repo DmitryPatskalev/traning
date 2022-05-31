@@ -2,7 +2,8 @@
   grid-area: nav;
   background-color: rgb(195, 239, 245);
   text-align: center;
-  padding: 30px;
+  padding: 10px;
+  width: 105px;
 }
 
 .item a {

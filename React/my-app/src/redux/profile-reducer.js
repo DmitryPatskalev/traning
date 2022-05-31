@@ -12,7 +12,7 @@ let initialState = {
     { id: 1, message: "How is it going?", like: 15 },
     { id: 2, message: "I am fine, thanks!", like: 20 },
   ],
-  newPostText: "Internet Technologies",
+  newPostText: "",
 };
 
 const profileReducer = (state = initialState, action) => {
