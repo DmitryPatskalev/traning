@@ -9,7 +9,7 @@ let store = {
         { id: 1, message: "How is it going?", like: 15 },
         { id: 2, message: "I am fine, thanks!", like: 20 },
       ],
-      newPostText: "Internet Technologies",
+      newPostText: "",
     },
     dialogsPage: {
       dialogs: [
@@ -23,7 +23,7 @@ let store = {
       messages: [
         { id: 1, message: "Hello!!" },
         { id: 2, message: "How is it going?" },
-        { id: 3, message: "I am fine, thaks!" },
+        { id: 3, message: "I am fine, thanks!" },
       ],
       newMessageBody: "",
     },
@@ -36,8 +36,8 @@ let store = {
   getState() {
     return this._state;
   },
-  subscribe(obserber) {
-    this._callSubscriber = obserber;
+  subscribe(observer) {
+    this._callSubscriber = observer;
   },
   dispatch(action) {
     this._state.profilePage = profileReducer(this._state.profilePage, action);

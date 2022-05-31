@@ -2,9 +2,10 @@ import css from "./MyPosts.module.css";
 import Post from "./Post/Post";
 import React from "react";
 
+
 const MyPosts = (props) => {
-  let postsElements = props.posts.map((posts) => (
-    <Post message={posts.message} like={posts.like} />
+  let postsElements = props.posts.map((posts,index) => (
+    <Post key={index} message={posts.message} like={posts.like} />
   ));
 
   let newPostElement = React.useRef();
