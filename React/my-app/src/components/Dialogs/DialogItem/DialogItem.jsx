@@ -1,13 +1,11 @@
 import { NavLink } from "react-router-dom";
-import cat from "./../../Photo/cat.jpg";
 import css from "./../../Dialogs/Dialogs.module.css";
 
 const DialogItem = (props) => {
   let path = "/dialogs/" + props.id;
   return (
-    <div>
+    <div className={css.users}>
       <NavLink to={path}>
-        <img className={css.cat} src={cat} alt='cat' />
         {props.name}
       </NavLink>
     </div>

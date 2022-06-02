@@ -4,8 +4,8 @@ import stadium from "./../../Photo/stadium.jpg";
 const ProfileInfo = () => {
   return (
     <div>
-      <div className={css.stadium}>
-        <img src={stadium} />
+      <div>
+        <img src={stadium} alt='stadium' />
       </div>
       <div className={css.descriptionBlock}>ava + description</div>
     </div>
